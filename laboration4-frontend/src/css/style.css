@@ -6,24 +6,43 @@
 
 body {
     font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.4;
 }
 
-main {
-    max-width: 1100px;
+html {
+    background-color: #edeef0;
+}
+
+main,
+nav {
+    max-width: 600px;
     margin: 0 auto;
+}
+
+nav ul {
+list-style: none;
 }
 
 h1 {
     margin-top: 30px;
+    margin-bottom: 20px;
 }
 
 form {
     width: 100%;
     max-width: 600px;
-    margin-top: 10px;
+    margin: 0 auto;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    border: 0.5px solid black;
+    padding: 2rem;
+    background-color: #c6d8e7;
+    border-radius: 10px;
+}
+
+label {
+    font-weight: bold;
 }
 
 input {
@@ -32,8 +51,8 @@ input {
     border: 0.5px solid black;
 }
 
-button {
-    background-color: rgb(26, 109, 129);
+.login-logout {
+    background-color: #1a6d81;
     color: white;
     padding: 0.5rem;
     border-radius: 10px;
@@ -42,4 +61,29 @@ button {
     max-width: 200px;
     font-size: 1.5rem;
     border: 0.5px solid black;
+}
+
+.logout-button {
+    background: none;
+    border: none;
+    color: inherit;
+    font: inherit;
+    cursor: pointer;
+    padding: 0;
+}
+
+li a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li a:hover,
+.logout-button:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    body {
+        margin: 20px;
+    }
 }
