@@ -31,7 +31,7 @@ form.addEventListener("submit", async (e) => {
     } else {
         alert(data.error);
     }
-} catch {
+} catch (error) {
     console.log(error);
 }
 });

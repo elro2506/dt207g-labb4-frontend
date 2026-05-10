@@ -26,7 +26,7 @@ form.addEventListener("submit", async (e) => {
 
         if(response.ok) {
         sessionStorage.setItem(
-            "token", data.response.token
+            "website_token", data.response.token
         );
         alert("Inloggningen lyckades!");
         window.location.href = "protected.html";
@@ -34,7 +34,7 @@ form.addEventListener("submit", async (e) => {
     } else {
         alert(data.error);
     }
-} catch {
+} catch (error) {
     console.log(error);
 }
 });
