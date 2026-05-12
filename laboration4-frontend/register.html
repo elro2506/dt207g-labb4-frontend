@@ -1,38 +1,40 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registrera</title>
-    <link rel="icon" type="image/x-icon" href="/public/favicon.svg">
+    <link rel="icon" type="image/x-icon" href="/favicon.svg">
     <link rel="stylesheet" href="src/css/style.css">
     <script type="module" src="/src/js/register.js"></script>
     <script type="module" src="/src/js/main.js" defer></script>
 </head>
+
 <body>
-    <div class="conatainer head-content">
-        <div class="logo">Min sida</div>
+    <header>
         <nav>
             <ul id="menu">
                 <li><a href="index.html" id="startsida">Startsida</a></li>
-                <li><a href="register.html" id="register-page">Registrera dig</a></li>
+                <li><a href="register.html" id="register-page" class="active">Registrera dig</a></li>
                 <li><a href="login.html" id="login-page">Logga in</a></li>
                 <li><a href="protected.html" id="admin-page">Admin</a></li>
             </ul>
         </nav>
-    </div>
+    </header>
     <main>
-    
-    <h1>Registrera ny användare</h1>
-    <form id="register">
-        <label for="username">Användarnamn:</label>
-        <input type ="text" id="username" placeholder="Användarnamn">
-        <label for="password">Lösenord:</label>
-        <input type ="password" id="password" placeholder="Lösenord"> <!--Så det blir prickar i stället för text-->
-        <button type="submit" class="login-logout">Registrera</button>
-    </form><br>
-    <p>Gå till <a href="login.html">inloggningssidan</a>.</p>
+
+        <h1>Registrera ny användare</h1>
+        <form id="register">
+            <label for="username">Användarnamn:</label>
+            <input type="text" id="username" placeholder="Användarnamn">
+            <label for="password">Lösenord:</label>
+            <input type="password" id="password" placeholder="Lösenord"> <!--Så det blir prickar i stället för text-->
+            <button type="submit" class="login-logout">Registrera</button>
+        </form><br>
+        <p>Gå till <a href="login.html">inloggningssidan</a>.</p>
     </main>
 
 </body>
+
 </html>

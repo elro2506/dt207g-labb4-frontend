@@ -4,7 +4,7 @@ window.onload = init;
 
 function init() {
   changeMenu();
- }
+}
 
 
 function changeMenu() {

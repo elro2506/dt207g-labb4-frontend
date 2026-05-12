@@ -1,30 +1,63 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skyddad sida</title>
-    <link rel="icon" type="image/x-icon" href="/public/favicon.svg">
+    <link rel="icon" type="image/x-icon" href="/favicon.svg">
     <link rel="stylesheet" href="src/css/style.css">
     <script type="module" src="/src/js/checkAuth.js"></script>
     <script type="module" src="/src/js/main.js"></script>
     <script type="module" src="/src/js/protected.js"></script>
 </head>
+
 <body>
-    <div class="conatainer head-content">
+    <header>
         <div d="protected-data">
-        <div class="logo">Min sida</div>
-        <nav>
-            <ul id="menu">
-                <li><a href="index.html" id="startsida">Startsida</a></li>
-                <li><a href="register.html" id="register-page">Registrera dig</a></li>
-                <li><a href="login.html" id="login-page">Logga in</a></li>
-                <li><a href="protected.html" id="admin-page">Admin</a></li>
-            </ul>
-        </nav>
-    </div>
-    <h1>Hejhej</h1>
-    <p>Ser du detta?</p>
+            <nav>
+                <ul id="menu">
+                    <li><a href="index.html" id="startsida">Startsida</a></li>
+                    <li><a href="register.html" id="register-page">Registrera dig</a></li>
+                    <li><a href="login.html" id="login-page">Logga in</a></li>
+                    <li><a href="protected.html" id="admin-page">Admin</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <h1>Du är utvald!</h1>
+        <p>Ser du detta? Det beror på att du är en av de utvalda med förtroende att komma åt denna sida. Så vad kan man
+            läsa om här då?</p><br>
+        <h2>Katter!</h2>
+        <p>Dessa små fluffiga bollar kan vara det gosigaste som finns, samtidigt som de också kan vara lite lömska och
+            hugga till när de vill signalera något.
+            När jag var 10 år köpte familjen två katter, och vi fem barn blev ju överlyckliga. Katterna var döpta av
+            förra ägarnas barn och det blev då ena barnets
+            favoritsångerska Anastasia och namnet på andra barnets crush; Robin. Vi kallade dem till slut Stassi
+            (observera två S) och Robin. Stassi blev 10 år och lever
+            inte längre efter sin njursvikt och Robin blev hela 18 år och finns inte längre på grund av ålder och
+            förkylning. Men, vi har en massa fina och härliga minnen
+            med dem och katter är fortfarande mitt favoritdjur! Dock reser jag och min familj för mycket så vi kan inte
+            ha husdjur</p>
+        <br>
+        <h2>Hundar!</h2>
+        <p>Även om hundar inte är mitt favoritdjur, är de himla söta! Är dock inte avundsjuk när jag klockan 22 en
+            blåsig och snöig kväll ser min granne genom fönstret när hon kämpar sig ut med sin hund för att få den
+            rastad.
+            Det räcker dock att titta på bilderna nedan för att komma överens om att hundar också är fantastiska djur :)
+        </p><br>
+        <div class="animals">
+            <div class="cat">
+                <img src="/katt.jpg" alt="En gullig katt">
+            </div>
+            <div class="dog">
+                <img src="/hund.jpg" alt="En gullig hund">
+            </div>
+        </div>
+        <p>Slut på meddelande, hoppas du uppskattade att nå min skyddade sida!</p>
+    </main>
     </div>
 </body>
+
 </html>

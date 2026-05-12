@@ -24,17 +24,17 @@ form.addEventListener("submit", async (e) => {
         const data = await response.json();
         console.log(data);
 
-        if(response.ok) {
-        sessionStorage.setItem(
-            "website_token", data.response.token
-        );
-        alert("Inloggningen lyckades!");
-        window.location.href = "protected.html";
+        if (response.ok) {
+            sessionStorage.setItem(
+                "website_token", data.response.token
+            );
+            alert("Inloggningen lyckades!");
+            window.location.href = "protected.html";
 
-    } else {
-        alert(data.error);
+        } else {
+            alert(data.error);
+        }
+    } catch (error) {
+        console.log(error);
     }
-} catch (error) {
-    console.log(error);
-}
 });

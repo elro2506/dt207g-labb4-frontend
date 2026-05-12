@@ -1,25 +1,40 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Startsida</title>
-    <link rel="icon" type="image/x-icon" href="/public/favicon.svg">
-    <link rel="stylesheet" href="src/css/style.css">
+    <link rel="icon" type="image/x-icon" href="/favicon.svg">
+    <link rel="stylesheet" href="/src/css/style.css">
     <script type="module" src="/src/js/main.js" defer></script>
 </head>
+
 <body>
-    <div class="conatainer head-content">
-        <div class="logo">Min sida</div>
+    <header>
         <nav>
             <ul id="menu">
-                <li><a href="index.html" id="startsida">Startsida</a></li>
+                <li><a href="index.html" id="startsida" class="active">Startsida</a></li>
                 <li><a href="register.html" id="register-page">Registrera dig</a></li>
                 <li><a href="login.html" id="login-page">Logga in</a></li>
                 <li><a href="protected.html" id="admin-page">Admin</a></li>
             </ul>
         </nav>
-    </div>
-    <h1>Hej</h1>
+    </header>
+    <main>
+        <h1>Laboration 4</h1>
+        <p>Välkommen till laboration 4 i DT207G!</p><br>
+        <p>I denna webbapplikation finns en skyddad sida, protected.html. Denna når du endast i inloggat läge. Men oroa
+            dig inte, det är möjligt för
+            dig att få en inloggning. För behöver du bara lösa denna ekvation:
+        </p><br>
+        <i>x6 - 132x5 +7260x4 - 212960x3 + 3513840x2 - 30921792x + 113379904 = 0</i><br><br>
+        <p>Eller så klickar du bara <a href="register.html">här</a> för att komma till sidan för registering.</p>
+    </main>
+    <footer>
+        <p>Elin Ronda</p>
+        <p>Laboration 4 - DT207G</p>
+    </footer>
 </body>
+
 </html>

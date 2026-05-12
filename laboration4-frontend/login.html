@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="sv">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inloggning</title>
-    <link rel="icon" type="image/x-icon" href="/public/favicon.svg">
+    <link rel="icon" type="image/x-icon" href="/favicon.svg">
     <link rel="stylesheet" href="src/css/style.css">
     <script type="module" src="/src/js/login.js"></script>
     <script type="module" src="/src/js/main.js" defer></script>
 </head>
+
 <body>
-    <div class="conatainer head-content">
-        <div class="logo">Min sida</div>
+    <header>
         <nav>
             <ul id="menu">
                 <li><a href="index.html" id="startsida">Startsida</a></li>
@@ -20,21 +21,24 @@
                 <li><a href="protected.html" id="admin-page">Admin</a></li>
             </ul>
         </nav>
-    </div>
-  <main>
-    <div class="centrera">
-    <h1>Logga in</h1>
-    <p>Här kan du logga in för att komma åt admin-sidorna.</p>
-    <p>Har du inga inloggningsuppgifter? Registrera dig enkelt på <a href="register.html">registreringssidan</a>.</p><br>
-    <form id="login">
-        <label for="username">Användarnamn:</label>
-        <input type ="text" id="username" placeholder="Användarnamn">
-        <label for="password">Lösenord:</label>
-        <input type ="password" id="password" placeholder="Lösenord"> <!--Så det blir prickar i stället för text-->
-        <button type="submit" class="login-logout">Logga in</button>
-    </form>
-    </div>
+    </header>
+    <main>
+        <div class="centrera">
+            <h1>Logga in</h1>
+            <p>Här kan du logga in för att komma åt admin-sidorna.</p>
+            <p>Har du inga inloggningsuppgifter? Registrera dig enkelt på <a
+                    href="register.html">registreringssidan</a>.</p><br>
+            <form id="login">
+                <label for="username">Användarnamn:</label>
+                <input type="text" id="username" placeholder="Användarnamn">
+                <label for="password">Lösenord:</label>
+                <input type="password" id="password" placeholder="Lösenord">
+                <!--Så det blir prickar i stället för text-->
+                <button type="submit" class="login-logout">Logga in</button>
+            </form>
+        </div>
     </main>
-    
+
 </body>
+
 </html>

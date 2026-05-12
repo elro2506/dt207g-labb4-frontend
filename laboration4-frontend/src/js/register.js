@@ -24,14 +24,14 @@ form.addEventListener("submit", async (e) => {
         const data = await response.json();
         console.log(data);
 
-        if(response.ok) {
-        alert("Användare skapad!");
-        
+        if (response.ok) {
+            alert("Användare skapad!");
 
-    } else {
-        alert(data.error);
+
+        } else {
+            alert(data.error);
+        }
+    } catch (error) {
+        console.log(error);
     }
-} catch (error) {
-    console.log(error);
-}
 });
